@@ -160,10 +160,10 @@ html,body{
 }
 </style>
 <div class='zcwf_title' style='max-width: 600px;color: #EA5625;'>Solicita&ccedil;&atilde;o Integra&ccedil;&atilde;o iFood</div>
-<div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label for='COBJ14CF7'>CNPJ</label></div><div class='zcwf_col_fld'><input type='text' id='COBJ14CF7' name='COBJ14CF7' maxlength='255'></input><div class='zcwf_col_help'></div></div></div>
+<div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label for='COBJ14CF7'>CNPJ<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><input type='text' id='COBJ14CF7' name='COBJ14CF7' maxlength='255'></input><div class='zcwf_col_help'></div></div></div>
 <div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label for='COBJ14CF8'>Raz&atilde;o Social</label></div><div class='zcwf_col_fld'><input type='text' id='COBJ14CF8' name='COBJ14CF8' maxlength='255'></input><div class='zcwf_col_help'></div></div></div>
 <div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label for='COBJ14CF1'>Nome fantasia</label></div><div class='zcwf_col_fld'><input type='text' id='COBJ14CF1' name='COBJ14CF1' maxlength='255'></input><div class='zcwf_col_help'></div></div></div>
-<div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label for='COBJ14CF3'>Tipo de conta iFood</label></div><div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' id='COBJ14CF3' name='COBJ14CF3'  >
+<div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label for='COBJ14CF3'>Tipo de conta iFood<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' id='COBJ14CF3' name='COBJ14CF3'  >
 			<option value='-None-'>-None-</option>
 			<option value='Fullservice'>Fullservice</option>
 			<option value='Marketplace'>Marketplace</option>
@@ -174,8 +174,8 @@ html,body{
 	<script>
 
  	  function checkMandatory4438872000070387452() {
-		var mndFileds = new Array();
-		var fldLangVal = new Array();
+		var mndFileds = new Array('COBJ14CF3','COBJ14CF7');
+		var fldLangVal = new Array('Tipo\x20de\x20conta\x20iFood','CNPJ');
 		for(i=0;i<mndFileds.length;i++) {
 		  var fieldObj=document.forms['WebForm4438872000070387452'][mndFileds[i]];
 		  if(fieldObj) {
